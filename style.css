@@ -1,0 +1,108 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    background-image:url(techback.jpg);
+}
+
+/* OVERLAY (important for visibility) */
+body::before {
+    content: "";
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+/* IMAGE */
+section img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* SKILLS GRID */
+#skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* FORM FIX */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* BUTTON */
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #2196f3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1976d2;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+}
